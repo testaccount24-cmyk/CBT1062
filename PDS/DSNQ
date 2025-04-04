@@ -1,0 +1,9 @@
+The load module DSNQ is produced by assembly and linkedit of the
+source module ENQ1DSN which is in this pds.  See member ENQ1DSN$
+for the JCL which produces this load module.
+
+The module ENQ2LOAD appears to be a necessary sub-program.
+
+
+
+

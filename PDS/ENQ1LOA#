@@ -1,0 +1,90 @@
+)F FUNCTION -
+
+ The ENQ1LOAD TSO command.
+
+ Display the enqueues of dataset(s) by qname/rname
+
+)X SYNTAX -
+
+   ENQ1LOAD qname/rname
+   ENQ1LOAD qname/*
+   ENQ1LOAD */rname
+
+)O OPERANDS
+
+   qname/rname
+   qname/*
+   */rname
+   (you can use the * to indicate a partial name for search)
+
+
+ Sample output:
+
+
+ ENQ1LOAD SYSZIOEZ/IOEZOD.ZFS.Z31B.WLP-RW
+
+  JOB/USER   MODE   MINOR NAME
+ ------------------------------
+  ZFS      - SHR    IOEZOD.ZFS.Z31B.WLP-RW
+
+
+
+ ENQ1LOAD SYSZIOEZ/*
+
+  JOB/USER   MODE   MINOR NAME
+ ------------------------------
+  ZFS      - EXCL   IOEZLT.ZFS.Z31B.CNJ
+  ZFS      - SHR    IOEZOD.ISM403.DBB.ZFS-RO
+  ZFS      - SHR    IOEZOD.ZFS.Z31B.WLP-RW
+  ZFS      - SHR    IOEZOD.ZFS.S0W1.WEB-RW
+  ZFS      - SHR    IOEZLR.ISM403.RSEAPI.ZFS
+  ZFS      - SHR    IOEZLR.IGY640.ZFS
+  ZFS      - EXCL   IOEZLT.ZFS.S0W1.ETC
+  ZFS      - EXCL   IOEZLT.ZFS.PRTXFORM
+  ZFS      - EXCL   IOEZLT.ZFS.S0W1.TMP
+  ZFS      - EXCL   IOEZLT.IZU.SIZUUSRD
+  ZFS      - EXCL   IOEZLT.IGY640.ZFS
+  ZFS      - EXCL   IOEZLT.ZFS.Z31B.ZCX
+  ZFS      - SHR    IOEZLR.ZFS.Z31B.CNJ
+  ZFS      - EXCL   IOEZLT.IEL610.ZFS
+  ZFS      - SHR    IOEZOD.ISM403.ETC.DBB.ZFS-RW
+  ZFS      - SHR    IOEZLR.BAQ30E.REL.ZFS
+  ZFS      - EXCL   IOEZLT.ZWE200.CONFIG.ZFS
+     (etc. etc.)
+
+
+ ENQ1LOAD */IOEZOD.ZFS.Z31B.WLP-RW
+
+   MAJOR QCB NAME
+  ----------------
+      IGWSSFAS
+      SPFEDIT
+      SPFUSER
+      SYSDSN
+      SYSIKJUA
+      SYSNFSC
+      SYSVSAM
+      SYSZAXR
+      SYSZBBO
+      SYSZBPX
+      SYSZCEA
+      SYSZCNZ
+      SYSZCSF
+      SYSZGTZ
+      SYSZHZR
+      SYSZHZS
+      SYSZIGDI
+      SYSZIGW0
+      SYSZIGW1
+      SYSZIKTC
+      SYSZILRD
+      SYSZIOEZ
+      SYSZJES2
+      SYSZRACF
+      SYSZRAC2
+      SYSZSDSF
+      SYSZTCPI
+      SYSZWLM
+      TCP_TCPI
+
+

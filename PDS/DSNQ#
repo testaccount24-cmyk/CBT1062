@@ -1,0 +1,26 @@
+)F FUNCTION -
+
+ The DSNQ TSO command.
+
+ Display the list of APF-Authorized libraries on the system.
+
+)X SYNTAX -
+
+   DSNQ dataset.name      (unquoted)
+
+)O OPERANDS
+
+   dataset.name
+
+
+ Sample output:
+
+
+ DSNQ  SYS1.LINKLIB
+
+ JOB/USER   MODE   MINOR NAME
+------------------------------
+ XCFAS    - SHR    SYS1.LINKLIB
+ LLA      - SHR
+
+
